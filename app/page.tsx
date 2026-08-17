@@ -336,7 +336,7 @@ export default function Home() {
                   needs translating.
                 </p>
                 <p className="price" style={{ marginTop: "auto" }}>
-                  <small>Inquire for pricing</small>
+                  $165 <small>per session</small>
                 </p>
               </article>
               <article className="offer feature reveal d1">
@@ -347,11 +347,10 @@ export default function Home() {
                 <p className="dur">1.5 hours · live online</p>
                 <p>
                   Space to go deeper — higher-self communication, energetic
-                  mirroring,
-                  and the insights that arise.
+                  mirroring, and the insights that arise.
                 </p>
                 <p className="price" style={{ marginTop: "auto" }}>
-                  <small>Inquire for pricing</small>
+                  $210 <small>per session</small>
                 </p>
               </article>
               <article className="offer reveal d2">
@@ -365,7 +364,7 @@ export default function Home() {
                   everything settle.
                 </p>
                 <p className="price" style={{ marginTop: "auto" }}>
-                  <small>Inquire for pricing</small>
+                  $260 <small>per session</small>
                 </p>
               </article>
             </div>
@@ -465,7 +464,7 @@ export default function Home() {
                 strokeWidth={1.7}
                 style={{ color: "var(--sage-deep)" }}
               />{" "}
-              1.5 hours · per session
+              1.5 hours · $225 per session
             </p>
             <a
               href={CALENDLY_URL}

@@ -56,6 +56,30 @@ and submissions can be delivered to any address.
 > If `RESEND_API_KEY` / `CONTACT_TO_EMAIL` aren't set, the form returns a clear
 > "email isn't configured" message instead of crashing.
 
+## Deploy to Vercel
+
+This app is Vercel-ready (App Router, pnpm lockfile, Node pinned via `.nvmrc`
+and `engines`, `vercel.json` framework hint, plus `robots` + `sitemap`).
+
+1. Push this repo to GitHub/GitLab/Bitbucket.
+2. In Vercel: **New Project → Import** the repo. Vercel auto-detects Next.js and
+   pnpm — no build config needed (Build: `next build`, Install: `pnpm install`).
+3. Add **Environment Variables** (Project → Settings → Environment Variables):
+   | Variable | Value | Notes |
+   |---|---|---|
+   | `RESEND_API_KEY` | your Resend key | required for the contact form |
+   | `CONTACT_TO_EMAIL` | inbox for submissions | required |
+   | `NEXT_PUBLIC_SITE_URL` | `https://yourdomain.com` | your live domain (metadata/sitemap) |
+   | `RESEND_FROM` | `Kinsey Lawrence <hello@yourdomain.com>` | optional, once domain is verified |
+4. **Deploy.** Then add your custom domain under Project → Domains.
+
+Notes:
+- The `/api/contact` route runs on the Node.js runtime (required by Resend).
+- `NEXT_PUBLIC_SITE_URL` is optional on preview builds — it falls back to the
+  Vercel preview URL automatically.
+- `.env.local` is gitignored and is **not** used by Vercel; set the values in the
+  Vercel dashboard instead.
+
 ## Configuration
 
 Edit `lib/site.ts` to change the Calendly URL, the public contact email, social

@@ -1,6 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Mulish } from "next/font/google";
+import { getSiteUrl } from "@/lib/site";
 import "./globals.css";
+
+const SITE_TITLE = "Kinsey Lawrence — Coherence Reflection & Energetic Clarity";
+const SITE_DESCRIPTION =
+  "Intuitive guidance with Kinsey Lawrence — a translator between your higher self and your conscious mind. Coherence reflection & energetic clarity sessions.";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -18,9 +23,24 @@ const mulish = Mulish({
 });
 
 export const metadata: Metadata = {
-  title: "Kinsey Lawrence — Coherence Reflection & Energetic Clarity",
-  description:
-    "Intuitive guidance with Kinsey Lawrence — a translator between your higher self and your conscious mind. Coherence reflection & energetic clarity sessions.",
+  metadataBase: new URL(getSiteUrl()),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    siteName: "Kinsey Lawrence",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    url: "/",
+    images: ["/images/hero.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/images/hero.jpg"],
+  },
 };
 
 export const viewport: Viewport = {
