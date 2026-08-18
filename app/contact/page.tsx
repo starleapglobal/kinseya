@@ -37,7 +37,10 @@ export default function ContactPage() {
           </div>
         </section>
 
-        <section className="section bg-paper" style={{ paddingTop: 0 }}>
+        <section
+          className="section bg-paper"
+          style={{ paddingTop: "clamp(40px, 6vw, 72px)" }}
+        >
           <div className="wrap split">
             <div className="reveal">
               <ContactForm />
@@ -75,8 +78,9 @@ export default function ContactPage() {
                 <div>
                   <b>In person or online</b>
                   <span>
-                    In-person sessions are available by arrangement. For privacy,
-                    the location is shared only once your booking is confirmed.
+                    In-person sessions are available in Kanata, Ontario by
+                    arrangement. For privacy, the exact address is shared only
+                    once your booking is confirmed.
                   </span>
                 </div>
               </div>

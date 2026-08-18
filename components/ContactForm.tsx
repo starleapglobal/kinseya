@@ -7,7 +7,7 @@ const INTERESTS = [
   "1-Hour Session",
   "1.5-Hour Session",
   "2-Hour Session",
-  "Biomagnetic Therapy",
+  "Biomagnetic Pair Therapy",
   "Not sure yet",
 ];
 

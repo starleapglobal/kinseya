@@ -42,7 +42,10 @@ export default function Footer() {
                 <Link href="/#offerings">1.5-Hour Session</Link>
               </li>
               <li>
-                <Link href="/#biomagnetic">Biomagnetic Therapy</Link>
+                <Link href="/#offerings">2-Hour Session</Link>
+              </li>
+              <li>
+                <Link href="/#biomagnetic">Biomagnetic Pair Therapy</Link>
               </li>
               <li>
                 <a

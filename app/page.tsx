@@ -390,9 +390,9 @@ export default function Home() {
                   marginTop: "4px",
                 }}
               />
-              Sessions are held live online, or in person by arrangement. For
-              privacy, the exact location is shared only once your booking is
-              confirmed.
+              Sessions are held live online, or in person in Kanata, Ontario by
+              arrangement. For privacy, the exact address is shared only once
+              your booking is confirmed.
             </p>
           </div>
         </section>
@@ -473,7 +473,7 @@ export default function Home() {
               className="btn reveal d2"
               style={{ marginTop: "18px" }}
             >
-              Book Biomagnetic Therapy
+              Book Biomagnetic Pair Therapy
             </a>
           </div>
         </section>
