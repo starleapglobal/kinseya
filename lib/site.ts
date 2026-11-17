@@ -28,7 +28,7 @@ export function getSiteUrl(): string {
 }
 
 // Public-facing email shown on the contact page and footer.
-export const CONTACT_EMAIL = "kinseyalawrence@gmail.com";
+export const CONTACT_EMAIL = "higherselfresonance@gmail.com";
 
 export const SOCIALS = {
   instagram: "https://instagram.com/",
